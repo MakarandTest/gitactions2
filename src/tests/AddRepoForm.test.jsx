@@ -5,8 +5,7 @@ import AddRepoForm from "../components/AddRepoForm";
 import {axe, toHaveNoViolations} from "jest-axe";
 expect.extend(toHaveNoViolations);
 
-// TODO: Write test for non-empty goals list, importing from ./mocks //tests
-
+// TODO: Write test for non-empty goals list, importing from ./mocks 
 test("container component should have no violations", async() => {
   const {container} = render(<AddRepoForm />);
   const results = await axe(container);
